@@ -1,4 +1,11 @@
 
+# chatbot1-3
+
+
+import random
+
+
+
 def check_for_greeting(sentence):
 #ricardo______
     import random
@@ -9,19 +16,28 @@ def check_for_greeting(sentence):
     if word.lower() in KEYWORDS:
         return(random.choice(GREETINGS))
 
-# chatbot1-3
-
-
+check_for_greeting()
 
 def mornings():
-    import random
+    def mornings():
     words=input("Whats your favorite cereal?:")
     bfast = (words)
-    respo = ["Really?", "That is good...", "Yummy!", "I cant even eat cereal or else my systems will fail."]
+    repo = ["Really?", "That is good...", "Yummy!", "I cant even eat cereal or else my systems will fail."]
 
     if words.lower() in bfast:
-        return(random.choice(respo))
-
+        return(random.choice(repo))
 
 mornings()
 
+
+def tfunct():
+    word=input("You Goodbye:")
+KEYWORDS = ("bye bye", "bye")
+ByeWords = ["Have a good day!", "Powering down", "HaveANiceTime"]
+
+if word.lower() in KEYWORDS:
+    print(random.choice(Byewords))
+    
+tfunct()
+
+input("\n\nPress enter to exit")
